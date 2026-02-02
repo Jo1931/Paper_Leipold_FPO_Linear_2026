@@ -1,5 +1,5 @@
 using DrWatson
-@quickactivate "Paper_Leipold_FPO_Linear_2026"
+quickactivate(@__DIR__, "Paper_Leipold_FPO_Linear_2026")
 
 using DynaMeth
 using Plots
