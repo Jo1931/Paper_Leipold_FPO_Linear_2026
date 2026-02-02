@@ -685,11 +685,11 @@ version = "2.19.1"
 
 [[deps.DynaMeth]]
 deps = ["CSV", "ComponentArrays", "DataFrames", "Dierckx", "DifferentialEquations", "FileIO", "ForwardDiff", "Ipopt", "JLD2", "JuMP", "LaTeXStrings", "LinearAlgebra", "MAT", "NonlinearSolve", "Optim", "Optimization", "OptimizationOptimJL", "PGFPlotsX", "Plots", "Statistics", "Sundials", "UnPack"]
-git-tree-sha1 = "c35f6cf40c8ab34128437b4536a13aa0a1b606ba"
+git-tree-sha1 = "327180e6643ccf92c852c4caf6d4c0868fdb45f2"
 repo-rev = "master"
 repo-url = "https://github.com/Jo1931/DynaMeth.jl"
 uuid = "ed7125c6-181f-4a88-94ec-310792e5ee2e"
-version = "0.1.0"
+version = "0.2.0"
 
 [[deps.EnumX]]
 git-tree-sha1 = "7bebc8aad6ee6217c78c5ddcf7ed289d65d0263e"
