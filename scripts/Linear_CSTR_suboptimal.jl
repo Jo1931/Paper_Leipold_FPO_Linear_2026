@@ -1,5 +1,6 @@
 using DrWatson
 quickactivate(@__DIR__, "Paper_Leipold_FPO_Linear_2026")
+
 using DynaMeth
 using Plots
 using JuMP
@@ -36,8 +37,8 @@ model = opti_test1(0, param, setup)
 result = collect_results_JuMP(model)
 full = merge(result, param)
 
-wsave(datadir("simulations/fpo", "linear_single_2.jld2"), full)
-model = Dict(Symbol(k) => v for (k, v) in wload(datadir("simulations/fpo", "linear_single_2.jld2")))
+wsave(datadir("sims", "linear_single_2.jld2"), full)
+model = Dict(Symbol(k) => v for (k, v) in wload(datadir("sims", "linear_single_2.jld2")))
 
 #Plots
 pgfplotsx()

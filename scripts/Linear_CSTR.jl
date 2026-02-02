@@ -35,7 +35,7 @@ model = opti_test1(0, param, setup)
 result = collect_results_JuMP(model)
 full = merge(result, param)
 
-wsave(datadir("sims/fpo", "linear_single_1.jld2"), full)
+wsave(datadir("sims", "linear_single_1.jld2"), full)
 
 
 model = Dict(Symbol(k) => v for (k, v) in wload(datadir("sims", "linear_single_1.jld2")))

@@ -120,8 +120,8 @@ for i = 2:np-1
 
 end
 
-wsave(datadir("simulations/fpo", "linear_pareto_squ_1.jld2"), full)
-wsave(datadir("simulations/fpo", "linear_pareto_ss_1.jld2"), fullss)
+wsave(datadir("sims", "linear_pareto_squ_1.jld2"), full)
+wsave(datadir("sims", "linear_pareto_ss_1.jld2"), fullss)
 
 full = Dict(Symbol(k) => v for (k, v) in wload(datadir("sims", "linear_pareto_squ_1.jld2")))
 fullss = Dict(Symbol(k) => v for (k, v) in wload(datadir("sims", "linear_pareto_ss_1.jld2")))
