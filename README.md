@@ -26,3 +26,12 @@ using DrWatson
 @quickactivate "Paper_Leipold_FPO_Linear_2026"
 ```
 which auto-activate the project and enable local path handling from DrWatson.
+
+## About
+
+This code base accompanies my **new research paper** by Leipold (2026) on Forced Periodic Operation of methanol synthesis.
+It contains all scripts and configurations required to reproduce the results presented in the paper.
+
+The project makes use of the package **DynaMeth.jl**.
+You can find the package here:
+https://github.com/Jo1931/DynaMeth.jl
