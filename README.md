@@ -32,6 +32,6 @@ which auto-activate the project and enable local path handling from DrWatson.
 This code base accompanies my **research paper** on Forced Periodic Operation of methanol synthesis.
 It contains all scripts required to reproduce the results presented in the paper.
 
-The project makes use of the package **DynaMeth.jl**.
+The project makes use of my package **DynaMeth.jl**.
 You can find the package here:
 https://github.com/Jo1931/DynaMeth.jl
