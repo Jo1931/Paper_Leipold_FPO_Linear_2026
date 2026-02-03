@@ -112,7 +112,6 @@ function plot_methanol_vollbrecht_cos()
     return p
 
 end
-
 function plot_methanol_vollbrecht_squ()
     kinetic = "AutoCat"
     solss = load(datadir("sims", "CSTR_Vollbrecht_Front_ss_" * kinetic * "_isothermal_T503_P50.jld2"))["sol"]
@@ -189,7 +188,7 @@ function plot_methanol_vollbrecht_squ()
     scatter!(solss.obj2 * 100, solss.obj1, mc=:transparent, m=:x, msc=:black, label=false, ms=3)
     scatter!(sol_lin.obj2 * 100, sol_lin.obj1, mc=:transparent, m=:x, msc=:darkred, label=false, ms=3)
     plot!(Y[1:end-1] * 100, solss.obj1[1:end-1], ls=:dash, c=:black, label=false)
-    annotate!(0.47 * 100, 30, text("Bussche", 12, :black))
+    annotate!(0.51 * 100, 30, text("Vanden Bussche", 12, :black))
 
     pleg = plot(
         legend=:bottom,              # Legende *im* Plot unten
@@ -414,7 +413,7 @@ function plot_methanol_vollbrecht_squ_all()
     scatter!(sol_lin.obj2 * 100, sol_lin.obj1, m=:x, mc=:transparent, msc=:darkred, frame=:box, label=false, legend=:topright, ylabel=L"\frac{\overline{\dot{n}_\mathrm{CH_3OH,out}}}{m_\mathrm{cat}} \mathrm{ \ in \ mmol/min/kg_{cat}}", ms=6)
     scatter!(solss_lin.obj2 * 100, solss_lin.obj1, alpha=0.5, m=:x, mc=:transparent, msc=:black, frame=:box, label=false, xlabel=L"\overline{Y} \mathrm{\ in \ \%} ", ms=6)
     plot!(Y[1:end-1] * 100, solss.obj1[1:end-1], ls=:dash, c=:black, label=false)
-    annotate!(0.47 * 100, 30, text("Bussche", 12, :black))
+    annotate!(0.50 * 100, 30, text("Vanden Bussche", 12, :black))
 
     bm = -6.3Plots.mm
     bm2 = 2 * bm
